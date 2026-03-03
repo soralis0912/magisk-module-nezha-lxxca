@@ -1,0 +1,20 @@
+# Camera customize
+ro.theme_customize=LCC
+
+# only customized property for beidou
+ro.product.odm.model=25128PNA1G
+ro.product.odm.cert=25128PNA1G
+ro.product.odm.marketname=Leitzphone powered by Xiaomi
+
+# The values of attribute ro.product.model_for_attestation
+# and ro.product.odm.model need to be consistent
+ro.product.model_for_attestation=25128PNA1G
+
+# Independent secure_element customize
+ro.special_edition=true
+
+# CAI Feature support based Independent secure_element
+ro.product.odm.support_cai=true
+
+# leica customize
+ro.theme_leica=true
