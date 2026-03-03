@@ -1,0 +1,29 @@
+# theme customize
+ro.boot.product.theme_customize =P1_Leica
+
+# add ro.bdsms attribute
+ro.bdsms=true
+
+# Tiantong customize
+ro.tiantong=true
+
+# Camera customize
+ro.theme_customize=LCC
+
+# only customized property for beidou
+ro.product.odm.model=25128PNA1C
+ro.product.odm.cert=25128PNA1C
+ro.product.odm.marketname=Xiaomi 17 Ultra by Leica
+
+# The values of attribute ro.product.model_for_attestation
+# and ro.product.odm.model need to be consistent
+ro.product.model_for_attestation=25128PNA1C
+
+# Independent secure_element customize
+ro.special_edition=true
+
+# CAI Feature support based Independent secure_element
+ro.product.odm.support_cai=true
+
+# leica customize
+ro.theme_leica=true

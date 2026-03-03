@@ -1,0 +1,20 @@
+# Camera customize
+ro.theme_customize=
+
+# only customized property for beidou
+ro.product.odm.model=2512BPNDAG
+ro.product.odm.cert=2512BPNDAG
+ro.product.odm.marketname=Xiaomi 17 Ultra
+
+# The values of attribute ro.product.model_for_attestation
+# and ro.product.odm.model need to be consistent
+ro.product.model_for_attestation=2512BPNDAG
+
+# Independent secure_element customize
+ro.special_edition=
+
+# CAI Feature support based Independent secure_element
+ro.product.odm.support_cai=
+
+# leica customize
+ro.theme_leica=

@@ -13,16 +13,27 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Archive Release
-      uses: thedoctor0/zip-release@master
-      with:
-        type: 'zip'
-        filename: 'magisk-module-nezha-lxxca-enabler.zip'
-        exclusions: '*.git*'
+    - uses: actions/checkout@v4
+    - name: Build Release Archives
+      run: |
+        mkdir -p dist
+
+        for variant in 17U 17UbyLxxca Lxxtzphone; do
+          build_dir="dist/${variant}"
+          archive="dist/magisk-module-nezha-lxxca-${variant}.zip"
+
+          mkdir -p "${build_dir}"
+          cp -R META-INF "${build_dir}/"
+          cp -R "${variant}/." "${build_dir}/"
+
+          (
+            cd "${build_dir}"
+            zip -r "../$(basename "${archive}")" .
+          )
+        done
     - name: Upload Release
       uses: ncipollo/release-action@v1
       with:
         allowUpdates: true
-        artifacts: "magisk-module-nezha-lxxca-enabler.zip"
+        artifacts: "dist/magisk-module-nezha-lxxca-17U.zip,dist/magisk-module-nezha-lxxca-17UbyLxxca.zip,dist/magisk-module-nezha-lxxca-Lxxtzphone.zip"
         token: ${{ secrets.GITHUB_TOKEN }}

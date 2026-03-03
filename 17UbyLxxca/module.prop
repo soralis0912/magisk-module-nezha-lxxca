@@ -1,0 +1,7 @@
+id=nezha-lxxca-17UbyLxxca
+name=Patch for Xiaomi 17 Ultra(fake to 17UbyLxxca)
+version=v01
+versionCode=01
+author=soralis0912
+description=Xiaomi iaomi 17 Ultra 用パッチ
+updateJson=https://raw.githubusercontent.com/soralis0912/magisk-module-nezha-lxxca/master/17UbyLxxca/update.json
